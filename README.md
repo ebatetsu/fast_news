@@ -1,1 +1,1 @@
-# fast_news
+# FAST NEWS

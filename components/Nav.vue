@@ -40,10 +40,9 @@ export default class Nav extends Vue {
 <style lang="stylus">
 .nav
   background-color #404040
-  .touch &
-    overflow-x auto
-    white-space nowrap
-    -webkit-overflow-scrolling touch
+  overflow-x auto
+  white-space nowrap
+  -webkit-overflow-scrolling touch
   &__inner
     display flex
     .no-touch &

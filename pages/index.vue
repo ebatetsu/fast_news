@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
+import { Vue, Component } from 'nuxt-property-decorator'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import Nav from '../components/Nav.vue'
@@ -27,6 +27,13 @@ import NewsList from '../components/NewsList.vue'
   }
 })
 export default class Index extends Vue {
+  // head
+  public head() {
+    return {
+      title: this.category,
+    }
+  }
+
   private category: string = 'general'
   private newsArticles: any = []
   private totalResults: any = 0

@@ -1,5 +1,20 @@
 {
   "extends": [
-    "config:base"
-  ]
+    "config:base",
+    "group:allNonMajor",
+    "docker:enableMajor",
+    "schedule:monthly",
+    ":noUnscheduledUpdates"
+  ],
+  "suppressNotifications": ["prIgnoreNotification"],
+  "prCreation": "immediate",
+  "draftPR": false,
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"]
+  },
+  "timezone": "Asia/Tokyo",
+  "node": {
+    "supportPolicy": ["lts_latest"]
+  }
 }

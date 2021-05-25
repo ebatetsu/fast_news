@@ -3,7 +3,6 @@
     "config:base",
     "group:allNonMajor",
     "docker:enableMajor",
-    "schedule:monthly",
     ":noUnscheduledUpdates"
   ],
   "suppressNotifications": ["prIgnoreNotification"],
